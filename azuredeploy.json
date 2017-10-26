@@ -140,7 +140,7 @@
         "diagnosticsProfile": {
           "bootDiagnostics": {
             "enabled": "true",
-            "storageUri": "[concat(reference(concat('Microsoft.Storage/storageAccounts/', parameters('diagStorageAccountName')), '2016-01-01').primaryEndpoints.blob)]"
+            "storageUri": "[concat('http://',parameters('diagStorageAccountName'),'.blob.core.windows.net')]"
           }
         }
       }
