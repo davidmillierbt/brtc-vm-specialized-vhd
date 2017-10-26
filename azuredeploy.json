@@ -55,7 +55,7 @@
     "publicIPAddressName": "[concat(variables('resourceNamePrefix'),'-ip'",
     "publicIPAddressType": "Dynamic",
     "vnetID": "[resourceId('Microsoft.Network/virtualNetworks',parameters('virtualNetworkName'))]",
-    "subnetRef": "[concat(variables('vnetID'),'/subnets/',variables('subnetName'))]",
+    "subnetRef": "[concat(variables('vnetID'),'/subnets/',parameters('subnetName'))]",
     "nicName": "[concat(variables('resourceNamePrefix'),'-nic'"
   },
   "resources": [
